@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Clear
 {
@@ -25,6 +26,36 @@ namespace Clear
                 else if (i % 5 == 0)
                 {
                     yield return "buzz";
+                }
+                else
+                {
+                    yield return Convert.ToString(i);
+                }
+            }
+        }
+
+        public IEnumerable<string> FizzBuzz(int upperbound, params Func<int, (bool, string)>[] conditions)
+        {
+            if (upperbound <= 0)
+            {
+                throw new ArgumentException("The upperbound shall be positive.");
+            }
+
+            for (var i = 1; i <= upperbound; i++)
+            {
+                var result = default(bool);
+                var message = default(string);
+
+                var match = conditions.FirstOrDefault(c =>
+                {
+                    (result, message) = c(i);
+                    return result;
+                });
+
+                if (match != null)
+                {
+                    (result, message) = match(i);
+                    yield return message;
                 }
                 else
                 {
