@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PJMDispRatesEdata">
+  <DataContextMoniker Name="/PJMDispRatesEdataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="15fba5d1-8dcf-4516-a9c9-b525b1c77dbd" absoluteBounds="3.875, 0.5, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/PJMDispRatesEdataDataContext/Data_eDataFeed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a31a68c-e65a-418a-8adb-105d6691e261" absoluteBounds="3.89, 0.96, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

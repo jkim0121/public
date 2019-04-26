@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ERCOT" Class="ERCOT5minLMPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DEGSRV4;Initial Catalog=ERCOT;Integrated Security=True" SettingsObjectName="Deg.DatabaseManager.Properties.Settings" SettingsPropertyName="ERCOTConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetERCOT5minLMPStartStop" Method="GetERCOT5minLMPStartStop">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="StopDate" Parameter="stopDate" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="GetERCOT5minLMPStartStopResult">
+      <Column Name="timepoint_cpt" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lmp" Type="System.Decimal" DbType="Decimal(20,2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetERCOTLocations" Method="GetERCOTLocations">
+    <ElementType Name="GetERCOTLocationsResult">
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetMax5minLMPTimepoint" Method="GetMax5minLMPTimepoint">
+    <ElementType Name="GetMax5minLMPTimepointResult">
+      <Column Name="" Member="Column1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

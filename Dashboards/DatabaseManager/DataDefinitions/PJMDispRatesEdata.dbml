@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PJMInstantaneousDispatchRates" Class="PJMDispRatesEdataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=degsrv4;Initial Catalog=PJMInstantaneousDispatchRates;Integrated Security=True" SettingsObjectName="Deg.DatabaseManager.Properties.Settings" SettingsPropertyName="PJMInstantaneousDispatchRatesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Data_eDataFeed" Member="Data_eDataFeeds">
+    <Type Name="Data_eDataFeed">
+      <Column Name="Timepoint" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EditTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="AEP" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ATSI" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="BC" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="COMED" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DAY" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DEOK" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DOM" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DPL" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DUQ" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="JC" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="METED" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PENELEC" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PEP" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="[PJM WEST]" Member="PJM_WEST" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PL" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PS" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="AP" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="EKPC" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

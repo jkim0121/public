@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PJMInstantaneousDispatchRates" Class="PJMDispRatesEdataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=degsrv4;Initial Catalog=PJMInstantaneousDispatchRates;Integrated Security=True" SettingsObjectName="Deg.DatabaseManager.Properties.Settings" SettingsPropertyName="PJMInstantaneousDispatchRatesConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetDispRatesEdataStartStop" Method="GetDispRatesEdataStartStop">
+    <Parameter Name="startTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="stopTime" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="GetDispRatesEdataStartStopResult">
+      <Column Name="TIMEPOINT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EDITTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VALUE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DATAZONE" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetDispRatesEdataTop" Method="GetDispRatesEdataTop">
+    <Parameter Name="count" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetDispRatesEdataTopResult">
+      <Column Name="TIMEPOINT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EDITTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VALUE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DATAZONE" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetDispRatesWebpageStartStop" Method="GetDispRatesWebpageStartStop">
+    <Parameter Name="StartTime" Parameter="startTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="StopTime" Parameter="stopTime" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="GetDispRatesWebpageStartStopResult">
+      <Column Name="TIMEPOINT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EDITTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VALUE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DATAZONE" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetDispRatesWebpageTop" Method="GetDispRatesWebpageTop">
+    <Parameter Name="count" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetDispRatesWebpageTopResult">
+      <Column Name="TIMEPOINT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EDITTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VALUE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DATAZONE" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

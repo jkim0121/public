@@ -1,0 +1,73 @@
+﻿<div ng-view ng-controller="baldayMonitorController" ng-init="initialize('ADA20289-0579-4E01-A02D-E11C7C977173');" style="width:inherit;height:inherit;white-space:nowrap;overflow:scroll;">
+    <fieldset class="groupbox fixedsize1" style="white-space:normal;">
+        <legend>Ref Days</legend>
+        <jqx-date-time-input jqx-width="100" ng-model="textboxdate" jqx-settings="dateformat"></jqx-date-time-input>
+        <jqx-button ng-click="onAddDateClick();" jqx-width="45" jqx-height="25" style="margin-top:2px;">Add</jqx-button>
+        <jqx-button ng-click="onRemoveDateClick();" jqx-width="45" jqx-height="25" style="margin-top:2px;">Del</jqx-button>
+        <jqx-list-box style="margin-top:2px;" jqx-settings="listsettings" ></jqx-list-box>
+        <jqx-check-box style="float: left; margin-top:2px;" ng-model="onpeak" ng-click="onoffpeakclick();">OnPeak</jqx-check-box>
+        <br />
+        <jqx-check-box style="float: left; margin-top:2px;" ng-model="offpeak" ng-click="onoffpeakclick();">OffPeak</jqx-check-box>
+    </fieldset>
+    <fieldset class="groupbox fixedsize1" style="width:150px;white-space:normal;">
+        <legend>Selection</legend>
+        <table>
+            <tr>
+                <td>Count</td><td>Average</td>
+            </tr>
+            <tr>
+                <td>0.00</td><td>0.00</td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset class="groupbox fixedsize1" style="white-space:normal;">
+        <legend>Intrinsic Implied</legend>
+        <div style="text-align:center;margin-top:15px;">0.00</div>
+        <table>
+            <tr>
+                <td><jqx-number-input jqx-width="75" jqx-height="25" jqx-spin-buttons="true" style='margin-top: 3px;' jqx-settings="numberformat"></jqx-number-input></td><td>0.00</td>
+            </tr>
+            <tr>
+                <td><jqx-number-input jqx-width="75" jqx-height="25" jqx-spin-buttons="true" style='margin-top: 3px;' jqx-settings="numberformat"></jqx-number-input></td>
+                <td>0.00</td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset class="groupbox fixedsize1" style="width:200px;white-space:normal;">
+        <legend>Knows/Unknows</legend>
+        <table>
+            <tr>
+                <th></th><th>knows</th><th>unknows</th><th>average</th>
+            </tr>
+            <tr>
+                <th>DA</th><th>22.46</th><th>32.35</th><th>28.64</th>
+            </tr>
+            <tr>
+                <th>RT</th><th>21.94</th><th>32.35</th><th>28.44</th>
+            </tr>
+            <tr>
+                <th>Dev</th><th>-0.53</th><th><jqx-number-input jqx-width="60" jqx-spin-buttons="false" jqx-settings="numberformat"></jqx-number-input></th><th></th>
+            </tr>
+
+        </table>
+    </fieldset>
+    <fieldset class="groupbox fixedsize1" style="white-space:normal;">
+        <legend>Quick Tools</legend>
+        <label style="margin-top:35px;">To add balday estimates</label>
+        <br />
+        <label>Deviation:</label>
+        <jqx-number-input jqx-width="120" jqx-height="25" jqx-spin-buttons="true" style='margin-top: 3px;' jqx-ng-model jqx-settings="numberformat"></jqx-number-input>
+        <br />
+        <jqx-button jqx-width="45" jqx-height="25">Clear</jqx-button>
+        <jqx-button jqx-width="45" jqx-height="25">Add</jqx-button>
+    </fieldset>
+    <br />
+    <fieldset class="groupbox" style="width:1225px;white-space:nowrap;">
+        <jqx-drop-down-list style="float:left;margin-right:10px;" jqx-width="90" jqx-height="25" ng-model="selectedValue1" jqx-ng-model></jqx-drop-down-list>
+        <jqx-drop-down-list style="float:left;margin-right:10px;" jqx-width="90" jqx-height="25" ng-model="selectedValue2" jqx-ng-model></jqx-drop-down-list>
+        <jqx-check-box style="float:left;margin-top:5px;margin-right:10px;" ng-model="useheatmap" ng-click="refreshTable();">Heat Map</jqx-check-box>
+        <a href style="float:left;margin-top:5px;margin-right: 10px;">DART Chart</a>
+        <br />
+        <jqx-grid id="baldayGrid" jqx-settings="tablesettings" ></jqx-grid>
+    </fieldset>
+</div>

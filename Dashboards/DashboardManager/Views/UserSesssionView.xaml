@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Deg.DashboardManager.UserSesssionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Deg.DashboardManager"
+             Loaded="UserControl_Loaded"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    FlowDirection="RightToLeft" Orientation="Horizontal"
+                    >
+            
+        </StackPanel>
+        <ListView Grid.Row="1" Margin="0,0,0,0"
+                  Name="_listViewSessions"
+                  >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="30" Header=""
+                                    >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          IsChecked="{Binding Path=., Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                          />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150" Header="User Name"
+                                    >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"
+                                           Text="{Binding Path=UserName, Mode=OneWay}"
+                                           />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="100" Header="Address"
+                                    >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"
+                                           Text="{Binding Path=ClientAddress, Mode=OneWay}"
+                                           />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="200" Header="Agent"
+                                    >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"
+                                           Text="{Binding Path=Agent, Mode=OneWay}"
+                                           />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

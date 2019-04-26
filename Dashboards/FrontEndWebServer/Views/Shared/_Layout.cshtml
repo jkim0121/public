@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denver Energy&trade; Dashboards</title>
+    <link rel="shortcut icon" href='@Href("~/favicon.ico")' type="image/x-icon" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cookie|Open+Sans:400,700" />
+    <link rel="stylesheet" href="~/jqwidgets/styles/jqx.base.css" />
+    <link rel="stylesheet" href="~/jqwidgets/styles/jqx.web.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/css/dock-manager.css" />
+    <link rel="stylesheet" href="~/css/dashboards.css" />
+</head>
+<body ng-app="dashboardsApp" ng-controller="mainController">
+    @RenderBody()
+    @*<footer id="footer">
+        <p>&copy; @DateTime.Now.Year - Denver Energy, LLC</p>
+    </footer>*@
+
+    <script type="text/javascript" src="~/scripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="~/js/angular.min.js"></script>
+    <script type="text/javascript" src="~/js/angular-resource.min.js"></script>
+    <script type="text/javascript" src="~/js/dockspawn.js"></script>
+    <script type="text/javascript" src="~/js/chart.min.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxnumberinput.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxcalendar.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxdatetimeinput.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="~/jqwidgets/jqxangular.js"></script>
+    <script type="text/javascript" src="~/dashboards.js"></script>
+</body>
+</html>

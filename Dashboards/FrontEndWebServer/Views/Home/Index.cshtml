@@ -1,0 +1,98 @@
+﻿<div id='cssmenu' @ViewBag.SessionInfo>
+    <ul>
+        <li class='active'>
+            <a href>PJM</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00010002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00010003')">Tick Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00010004')">Dispatch Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>MISO</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00020002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00020003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>ERCOT</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00030002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00030003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>SPP</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00050002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00050003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>CAISO</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00040002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00040003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>NYISO</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00060002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00060003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+        <li class='active'>
+            <a href>ISO-NE</a>
+            <ul>
+                <li>
+                    <a href ng-click="adddNewControl('0x00070002')">Balday Monitor</a>
+                </li>
+                <li>
+                    <a href ng-click="adddNewControl('0x00070003')">Tick Monitor</a>
+                </li>
+            </ul>
+        </li>
+
+@if (ViewBag.IsDebug)
+{
+        <li class='active'>
+            <a href>DEBUG</a>
+            <ul>
+                <li>
+                    <a href ng-click="testlayout()">Test Layout</a>
+                </li>
+            </ul>
+        </li>
+}
+        <li><a href>About</a></li>
+    </ul>
+</div>
+<div id="dock-manager" class="dock-manager" ng-init="initialize('@ViewBag.Server', @Convert.ToString(ViewBag.Port))"></div>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PJMInstantaneousDispatchRates" Class="PJMDispRatesWebPageDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=degsrv4;Initial Catalog=PJMInstantaneousDispatchRates;Integrated Security=True" SettingsObjectName="Deg.DatabaseManager.Properties.Settings" SettingsPropertyName="PJMInstantaneousDispatchRatesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Data" Member="Datas">
+    <Type Name="Data">
+      <Column Name="Timepoint" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EditTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataZone1" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone3" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone4" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone5" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone6" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone7" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone8" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone9" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone10" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone11" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone12" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone13" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone14" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone15" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone16" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone17" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone18" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataZone19" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

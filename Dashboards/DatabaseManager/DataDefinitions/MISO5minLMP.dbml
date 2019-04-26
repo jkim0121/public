@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MISOExAnteLMPs" Class="MISO5minLMPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DEGSRV4;Initial Catalog=MISOExAnteLMPs;Integrated Security=True" SettingsObjectName="Deg.DatabaseManager.Properties.Settings" SettingsPropertyName="MISOExAnteLMPsConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetMISO5minLMPStartStop" Method="GetMISO5minLMPStartStop">
+    <Parameter Name="StartTime" Parameter="startTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="StopTime" Parameter="stopTime" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="GetMISO5minLMPStartStopResult">
+      <Column Name="NodeName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Timepoint" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LMP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EditTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetMISOLocations" Method="GetMISOLocations">
+    <ElementType Name="GetMISOLocationsResult">
+      <Column Name="location_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetMISOMaxTimepoint" Method="GetMISOMaxTimepoint">
+    <ElementType Name="GetMISOMaxTimepointResult">
+      <Column Name="" Member="Column1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

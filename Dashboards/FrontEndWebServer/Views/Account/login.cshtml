@@ -1,0 +1,21 @@
+﻿@model Deg.FrontEndWebServer.Models.LoginModel
+
+<div class="login-body" ng-controller="loginController">
+    <div ng-show="loginScreen">
+        <div class="wrap">
+            <div class="avatar">
+                <img src="@Url.Content("~/img/logo.png")">
+            </div>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                <input name="Username" type="text" placeholder="username" ng-model="username">
+                <div class="bar">
+                    <i></i>
+                </div>
+                <input name="Password" type="password" placeholder="password">
+                <a href="" class="forgot_link">forgot ?</a>
+                <button type="submit">Sign in</button>
+            }
+        </div>
+    </div>
+</div>

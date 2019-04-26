@@ -1,0 +1,39 @@
+﻿<div ng-controller="tickMonitorController" ng-init="initialize('ADA20289-0579-4E01-A02D-E11C7C977173')" style="width:inherit;height:inherit;overflow:scroll;">
+    <jqx-tabs jqx-width='300' jqx-height='300'>
+        <ul>
+            <li>Tick</li>
+            <li>Dispatch Rate</li>
+        </ul>
+        <div>
+            <fieldset class="groupbox" style="width:250px;height:60px;">
+                <legend jqx-ng-model>{{timezone}} Time</legend>
+                <label style="align-items:center;" jqx-ng-model>{{ADA20289-0579-4E01-A02D-E11C7C977173time|date:'MM/dd/yyyy HH:mm:ss':'UTC'}}</label>
+            </fieldset>
+            <br />
+            <fieldset class="groupbox" style="width:250px;height:130px;">
+                <legend>Instantaneous Tick Value</legend>
+                <jqx-drop-down-list style="float: left; margin-right: 10px;" jqx-width="90" jqx-height="25" ng-model="selectedlocation" onchange="onlocationchanged();" jqx-ng-model></jqx-drop-down-list>
+                <jqx-check-box style="float:left;margin-top:5px;margin-right:10px;" ng-model="usecramer" jqx-ng-model>Cramer</jqx-check-box>
+                <br />
+                <br />
+                <label jqx-ng-model>{{current}}</label>
+                <label jqx-ng-model>{{previous}}</label>
+                <label jqx-ng-model>{{delta}}%</label>
+                <br />
+                <label style="align-items:center;" jqx-ng-model>{{updatedtime|time24hr}}</label>
+</fieldset>
+        </div>
+        <div>
+            <jqx-check-box style="float: left; margin-right: 10px;" ng-model="dispatchenabled" jqx-ng-model>Enabled</jqx-check-box>
+            <br />
+            <table>
+                <tr>
+                    <td>Threshold:</td><td><jqx-number-input id="threshold" jqx-width="80" jqx-height="25" jqx-spin-buttons="true" style='margin-top: 3px;' jqx-ng-model jqx-settings="numberformat"></jqx-number-input></td>
+                </tr>
+                <tr>
+                    <td>Distance PEP-PN:</td><td><jqx-number-input id="distance" jqx-width="80" jqx-height="25" jqx-spin-buttons="true" style='margin-top: 3px;' jqx-ng-model jqx-settings="numberformat"></jqx-number-input></td>
+                </tr>
+            </table>
+        </div>
+    </jqx-tabs>
+</div>
