@@ -1,0 +1,16 @@
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\HelloAspCore.deps.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\HelloAspCore.runtimeconfig.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\HelloAspCore.runtimeconfig.dev.json
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\HelloAspCore.dll
+C:\Users\jeong.kim\source\repos\HelloAspCore\bin\Debug\netcoreapp2.2\HelloAspCore.pdb
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.csprojAssemblyReference.cache
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.RazorAssemblyInfo.cache
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.RazorAssemblyInfo.cs
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.AssemblyInfoInputs.cache
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.AssemblyInfo.cs
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.RazorTargetAssemblyInfo.cache
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.dll
+C:\Users\jeong.kim\source\repos\HelloAspCore\obj\Debug\netcoreapp2.2\HelloAspCore.pdb
